@@ -1,0 +1,103 @@
+.form {
+    input,
+    textarea {
+        margin-bottom: 15px;
+        padding: 15px 26px;
+        min-width: 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-size: 16px;
+
+        @include placeholder();
+
+        &:focus {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 50px;
+    }
+}
+
+.form__select-wrap {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        border: 4px solid transparent;
+        border-top-color: #fff;
+        position: absolute;
+        top: 24px;
+        right: 25px;
+    }
+
+    select {
+        margin-bottom: 15px;
+        padding: 0 26px;
+        min-width: 0;
+        width: calc(100% + 30px);
+        height: 49px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-size: 16px;
+
+        &:focus {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+
+.form__row {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 10px;
+    
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.form__col {
+    padding: 0 15px;
+    flex: 1 1 auto;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 992px) {
+        width: 25%;
+    }
+}
+
+.form__field-wrap {
+    position: relative;
+}
+
+.form__field-alert {
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: -3px;
+    left: 26px;
+    z-index: 1;
+}
+
+.form__bottom {
+    margin-top: 25px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        margin-top: 35px;
+    }
+}

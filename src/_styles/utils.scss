@@ -1,0 +1,14 @@
+.pos-r {
+    position: relative;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-blue {
+    color: $c-blue;
+}
+.clearfix{
+    @include clearfix()
+}

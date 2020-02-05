@@ -1,0 +1,37 @@
+.price {
+  margin-top: 100px;
+  h2{
+    margin-bottom: 50px;
+  }
+  h3{
+    font-family: Arial;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $c-text;
+    margin: 50px 0;
+  }
+  table{
+    border-collapse: collapse;
+    thead td{
+      font-family: ArialBold;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    td{
+      padding: 15px 0 15px 147px;
+      color: $c-text;
+      font-size: 16px;
+      width: 50%;
+    }
+  }
+  table tbody tr:nth-child(odd){
+    background: #FAFAFA;
+  }
+  &__text_below {
+    padding-top: 30px;
+    font-size: 13px;
+    color: $c-text;
+  }
+}

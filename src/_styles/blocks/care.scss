@@ -1,0 +1,36 @@
+.care {
+  margin-top: 90px;
+  h2 span{
+    font-size: 36px;
+    color: $c-blue;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+  }
+  &__row__item {
+    margin: 0 6px;
+    color: $c-text;
+    width: 300px;
+    text-align: center;
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  &__row__item__text {
+    text-align: center;
+    padding-top: 29px;
+    p{
+      font-size: 22px;
+      padding-bottom: 11px;
+    }
+    span{
+      font-size: 36px;
+    }
+  }
+}

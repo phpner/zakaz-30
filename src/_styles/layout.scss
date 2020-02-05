@@ -1,0 +1,14 @@
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 980px;
+    @media (max-width: 980px) {
+        width: 100%;
+    }
+}
+
+.page-wrap {
+    flex: 1 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}

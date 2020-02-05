@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+        {% block common_styles %}
+            <link rel="stylesheet" href="css/style.css">
+            <!-- <link rel="stylesheet" href="css/style.min.css?v=3"> -->
+        {% endblock %}
+    </head>
+    <body>
+        <!-- header -->
+        {% include "../includes/header.twig" %}
+        
+        <!-- the main contant -->
+        <div class="page-wrap">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <!-- footer -->
+        {% include "../includes/footer.twig" %}
+
+        {% block common_scripts %}
+            <script src="js/libs/jquery-3.4.1.min.js"></script>
+            <script src="js/main.js?v=2"></script>
+        {% endblock %}
+    </body>
+</html>
